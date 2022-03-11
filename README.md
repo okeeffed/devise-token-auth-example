@@ -83,3 +83,14 @@ After usage of a token, it will expire.
 ## Things to note
 
 - Default [`token_lifespan`](https://devise-token-auth.gitbook.io/devise-token-auth/config/initialization) is 2 weeks.
+
+## Part 2: Adding in Omniauth
+
+Added these gems:
+
+```rb
+gem 'omniauth-github'
+gem 'omniauth-rails_csrf_protection'
+```
+
+Follow [my blog](https://blog.dennisokeeffe.com/blog/2022-03-08-part-5-oauth-with-github-and-omniauth).

@@ -74,3 +74,8 @@ end
 gem 'devise'
 gem 'omniauth'
 gem 'devise_token_auth', '>= 1.2.0', git: "https://github.com/lynndylanhurley/devise_token_auth"
+
+gem 'omniauth-github'
+gem 'omniauth-rails_csrf_protection'
+
+gem "dotenv-rails", "~> 2.7", require: 'dotenv/rails-now', :groups => [:development, :test]
