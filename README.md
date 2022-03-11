@@ -83,3 +83,5 @@ After usage of a token, it will expire.
 ## Things to note
 
 - Default [`token_lifespan`](https://devise-token-auth.gitbook.io/devise-token-auth/config/initialization) is 2 weeks.
+
+## Part 2: Devise with Doorkeeper

@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  use_doorkeeper do
+    skip_controllers :authorizations, :applications,
+                     :authorized_applications
+  end
+
   mount_devise_token_auth_for 'User', at: 'auth'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -6,6 +11,10 @@ Rails.application.routes.draw do
   # root "articles#index"
   namespace :api do
     namespace :v1 do
+      resources :home, only: [:index]
+    end
+
+    namespace :v2 do
       resources :home, only: [:index]
     end
   end
